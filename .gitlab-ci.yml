@@ -1,0 +1,51 @@
+image: mcr.microsoft.com/dotnet/sdk:8.0
+
+stages:
+  - build
+  - deploy
+
+variables:
+  DOTNET_VERSION: "8.0"
+  PROJECT_PATH: "BE/src/MatchFinder.WebAPI"
+  AZURE_APP_NAME: "matchfinder"
+  AZURE_RESOURCE_GROUP: "MatchFinder"
+
+before_script:
+  - apt-get update -y
+  - apt-get install -y curl lsb-release zip
+  - curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+  - az version
+  - az upgrade --yes
+  - zip --version
+
+build:
+  stage: build
+  script:
+    - dotnet restore $PROJECT_PATH
+    - dotnet build $PROJECT_PATH --configuration Release
+    - dotnet publish $PROJECT_PATH --configuration Release --output publish
+    - chmod -R 755 publish
+    - cd publish
+    - zip -r ../publish.zip *
+    - cd ..
+    - unzip publish.zip -d extracted_publish
+    - ls -la extracted_publish
+  artifacts:
+    paths:
+      - publish.zip
+    expire_in: 1 hour
+  only:
+    - main
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying to Azure App Service"
+    - ls -la
+    - az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET --tenant $AZURE_TENANT_ID
+    - az webapp config appsettings set --resource-group $AZURE_RESOURCE_GROUP --name $AZURE_APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE=1
+    - az webapp deploy --resource-group $AZURE_RESOURCE_GROUP --name $AZURE_APP_NAME --src-path publish.zip --type zip
+    - az webapp restart --name $AZURE_APP_NAME --resource-group $AZURE_RESOURCE_GROUP
+    - az webapp log deployment show -n $AZURE_APP_NAME -g $AZURE_RESOURCE_GROUP
+  only:
+    - main

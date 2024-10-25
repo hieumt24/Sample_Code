@@ -1,0 +1,13 @@
+export enum PaymentStatus {
+  PENDING = 'PENDING',
+  SUCCESSFUL = 'SUCCESSFUL',
+  FAILED = 'FAILED',
+  CANCELLED = 'CANCELLED'
+}
+
+export enum PaymentType {
+  BOOKING = 'BOOKING',
+  RECHARGE = 'RECHARGE',
+  DEBTPAYMENT = 'DEBTPAYMENT',
+  REFUND = 'REFUND'
+}

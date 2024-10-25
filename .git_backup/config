@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "main"]
+	url = https://gitlab.com/longnthe161226/BaseProject
+	fetch = +refs/heads/*:refs/remotes/main/*
+[remote "origin"]
+	url = https://gitlab.com/longnthe161226/BaseProject
+	fetch = +refs/heads/*:refs/remotes/origin/*

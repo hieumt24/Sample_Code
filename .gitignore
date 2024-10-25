@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BE/src/MatchFinder.WebAPI/appsettings.Development.json
+/BE/src/MatchFinder.Infrastructure/appsettings.json
+/BE/src/MatchFinder.WebAPI/appsettings.Development.json
+/.vs/slnx.sqlite
+/BE/.idea/*

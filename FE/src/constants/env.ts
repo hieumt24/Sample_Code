@@ -1,0 +1,6 @@
+export const API_BASE_URL = 'http://localhost:5012/api/'
+export const BASE_URL = 'http://localhost:5012/'
+export const NOTIFICATION_HUB = 'http://localhost:5012/hub/notifications'
+export const VITE_APP_GOONG_API_KEY = 'q9nrMv2T2PXJZEgLNHadSAvQfyGasD3LUR92IK5C'
+export const VITE_APP_GOONG_MAP_KEY = 'Ep5LKYhE7nVgMRP2G9YQq0iOwZSRmgh507qPm1If'
+export const VITE_APP_NOTIFICATION_HUB = 'http://localhost:5012/hub/notifications'

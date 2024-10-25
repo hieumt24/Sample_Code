@@ -1,0 +1,45 @@
+{
+  "common": {
+    "goodbye": "Goodbye!",
+    "hello": "We make it easy for you to find an artificial football field. Register now!",
+    "language": "language"
+  },
+  "form": {
+    "admit": "Admit",
+    "back": "Back",
+    "cancel": "Cancel",
+    "editProfile": "Edit your profile",
+    "entercode": "Enter code",
+    "forgotPassword": "Forgot password ?",
+    "sendCode": "Send code",
+    "submit": "Submit",
+    "title": {
+      "forgot": "Forgot password",
+      "login": "Login",
+      "register": "Register"
+    },
+    "username": "User name"
+  },
+  "sidebar": {
+    "owner": {
+      "bookings": "Booking field",
+      "field": "Field",
+      "home": "Home",
+      "human": "Human",
+      "logout": "Logout",
+      "me": "My account",
+      "schedules": "Schedules",
+      "staffs": "Staffs",
+      "statistics": "Statistics",
+      "tournaments": "Tournaments"
+    }
+  },
+  "table": {
+    "pageText": "Page",
+    "prevPage": "Previous page"
+  },
+  "validation": {
+    "passwordLength": "Password with at least 8 characters!",
+    "required": "This field is required!"
+  }
+}

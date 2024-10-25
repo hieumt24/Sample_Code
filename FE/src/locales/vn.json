@@ -1,0 +1,135 @@
+{
+  "common": {
+    "goodbye": "Tam biet",
+    "hello": "Chúng tôi đem đến cho các bạn sự dễ dàng trong việc tìm kiếm sân bóng đá nhân tạo. Hãy đăng kí ngay!",
+    "home": "Trang chủ",
+    "language": "Ngôn ngữ"
+  },
+  "bookingStatus": {
+    "WAITING": "Chờ xác nhận",
+    "ACCEPTED": "Thành công",
+    "CANCELED": "Đã huỷ",
+    "REJECTED": "Bị từ chối",
+    "undefined": "Đang tải ..."
+  },
+  "fieldStatus": {
+    "WAITING": "Chờ duyệt",
+    "ACCEPTED": "Hoạt động",
+    "INACTIVE": "Không hoạt động",
+    "REJECTED": "Bị từ chối",
+    "undefined": "Đang tải ..."
+  },
+  "userStatus": {
+    "IN_ACTIVE": "Không hoạt động",
+    "ACTIVE": "Hoạt động"
+  },
+  "blogPostType": {
+    "ANNOUCMENT": "Thông báo",
+    "TOURNAMENT": "Giải đấu",
+    "PROMOTION": "Quảng cáo",
+    "undefined": ""
+  },
+  "paymentStatus": {
+    "PENDING": "Chờ thanh toán",
+    "SUCCESSFUL": "Thành công",
+    "FAILED": "Thất bại",
+    "CANCELLED": "Đã huỷ",
+    "undefined": "Không xác định"
+  },
+  "paymentType": {
+    "BOOKING": "Đặt sân",
+    "DEBTPAYMENT": "Thanh toán nợ",
+    "RECHARGE": "Nạp tiền",
+    "REFUND": "Hoàn tiền",
+    "undefined": "Không xác định"
+  },
+  "form": {
+    "admit": "Xác nhận",
+    "approve": "Chấp nhận",
+    "back": "Quay lại",
+    "cancel": "Huỷ",
+    "create": "Tạo mới",
+    "editProfile": "Chỉnh sửa thông tin",
+    "entercode": "Nhập code",
+    "forgotPassword": "Quên mật khẩu ?",
+    "inActiveAccount": "Tắt hoạt động tài khoản",
+    "reject": "Từ chối",
+    "resetPass": "Đổi mật khẩu",
+    "sendCode": "Gửi mã xác nhận",
+    "submit": "Gửi",
+    "title": {
+      "forgot": "Quên mật khẩu",
+      "login": "Đăng nhập",
+      "register": "Đăng ký"
+    },
+    "username": "Tên đăng nhập"
+  },
+  "searchTab": {
+    "address": "Địa chỉ",
+    "email": "Email",
+    "fromDate": "Từ ngày",
+    "toDate": "Đến ngày",
+    "fromCreateDate": "Ngày tạo tài khoản",
+    "name": "Tên sân bóng",
+    "phoneNumber": "Số điện thoại",
+    "status": "Trạng thái",
+    "toCreateDate": "Ngày khóa hoạt động",
+    "userName": "Tên tài khoản",
+    "date": "Ngày",
+    "province": "Tỉnh",
+    "district": "Huyện",
+    "commune": "Xã"
+  },
+  "sidebar": {
+    "admin": {
+      "fields": "Sân bóng",
+      "role": "Vai trò",
+      "system": "Hệ thống",
+      "posts": "Bài viết",
+      "tournaments": "Giải đấu",
+      "reports": "Tố cáo",
+      "users": "Người dùng"
+    },
+    "owner": {
+      "bookings": "Lịch đặt sân",
+      "field": "Sân bóng",
+      "home": "Quản lý đặt sân",
+      "human": "Nội bộ",
+      "logout": "Đăng xuất",
+      "me": "Tài khoản của tôi",
+      "myFields": "Sân của tôi",
+      "schedules": "Lịch nghỉ",
+      "staffs": "Nhân viên",
+      "statistics": "Thống kê",
+      "find_booking": "Tìm kiếm lịch trống",
+      "posts": "Bài viết",
+      "history": "Lịch sử",
+      "payment_management": "Quản lý thanh toán",
+      "tournaments": "Giải đấu"
+    },
+    "user": {
+      "explorer": "Khám phá",
+      "home": "Trang chủ",
+      "logout": "Đăng xuất",
+      "profile": "Tài khoản",
+      "tournaments": "Giải đấu",
+      "bookingHistory": "Lịch sử",
+      "find-opponent": "Tìm đối",
+      "payment-history": "Lịch sử thanh toán",
+      "booking-history": "Lịch sử đặt sân",
+      "favorite-field": "Sân yêu thích"
+    }
+  },
+  "table": {
+    "pageText": "Trang",
+    "prevPage": "Trang trước"
+  },
+  "validation": {
+    "passwordLength": "Mật khẩu có ít nhất 8 ký tự",
+    "passwordNotMatch": "Mật khẩu không khớp",
+    "phoneNumber": "Số điện thoại không hợp lệ",
+    "maxLength": "Tối đa {max} ký tự",
+    "invalidTime": "Thời gian không hợp lệ",
+    "required": "Trường này là bắt buộc"
+  }
+}

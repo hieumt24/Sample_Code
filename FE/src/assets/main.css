@@ -1,0 +1,31 @@
+@import './base.css';
+@import 'primeicons/primeicons.css';
+
+#app {
+  width: 100% !important;
+  height: 100%;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  background-color: #f5f5f5;
+}
+
+.focus\:outline-none:focus {
+  outline: none !important;
+}
+
+.\[\&\>input\]\:pr-10 > input {
+  width: 100%;
+}

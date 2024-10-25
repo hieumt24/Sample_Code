@@ -1,0 +1,11 @@
+export enum ReportStatus {
+  PENDING = 'PENDING',
+  DISMISS = 'DISMISS',
+  RESOLVED = 'RESOLVED'
+}
+
+export enum ReportType {
+  UNREALFIELD = 'UNREALFIELD',
+  VIOLATEDPHOTO = 'VIOLATEDPHOTO',
+  NOTRESPONDING = 'NOTRESPONDING'
+}
